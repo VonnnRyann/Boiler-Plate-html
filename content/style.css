@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap');
+h1 {
+    color: aquamarine;
+    width: 100px;
+    display: inline-table;
+    height: 100px;
+    background-color: blue;
+
+}
+
+#nice {
+    width: 200px;
+    display: inline-block;
+    background-color: brown;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    height: 200px;
+}
+/* pre {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+ul {
+    background-color: aquamarine;
+}
+li {
+    background-color: brown;
+}
+pre {
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: large;
+    
+}
+section > p {
+    color: cornflowerblue;
+}
+/* section + p {
+    color: crimson;
+} */
+section ~ p {
+    color: crimson;
+    font-size: large;
+    font-family: 'Stick No Bills', sans-serif
+}
+li:first-child {
+    background-color: darkgray;
+}
+li:last-child {
+    background-color: darkorange;
+}
+p:first-child {
+    background-color: rgb(182, 223, 236);
+}
+.time-to  *:first-child{
+    color: khaki;
+}
+/* section > div = div 1 +div 2 2 child is only selected!!section div = div1 +div2 +div3 are the childs */
+
+/* if your using tilda in 1 section with 4 div! div2 ~ div = div2 and div 4.they only select the down to element */
+
+#Section1, #Section1 * {
+    border: 10px solid black;
+    margin: 5px;
+}
+#Section1 > div {
+    border: 2px solid khaki;
+}
+#Div2 ~ div {
+    border: 3px solid tomato;
+}
+section:last-child > div:last-child {
+    border: solid 5px greenyellow;
+}
+.being {
+    border: 5px solid black;
+}
+/* div:last-of-type > p:nth-last-of-type(3){
+    border: black 1px solid;
+} this is a sample of the nth path */
+div:last-of-type > p:nth-last-of-type(3n+1){
+    border: black 2px solid;
+}
